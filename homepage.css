@@ -1,0 +1,137 @@
+p{
+	font-size: 20px;
+}
+.col-lg-12{
+	text-align:left;
+	padding: 10px;
+	margin-left: 10px;
+	column-gap: 5px;
+	
+	
+}
+body{
+	background-color:  #b3e0ff;
+	background-image: url("background.jpeg");
+	background-size: cover;
+	font-family: Arial;
+}
+#div1{
+	background-color:  #33adff;
+}
+#rest{
+	text-align: center;
+	background-color: lightblue;
+	border-bottom: 2px solid #b3e0ff;
+}
+
+ul {
+  background-color: #017ce0;
+  position: sticky;
+  top: 0;
+  opacity: 1;
+}
+
+li {
+  float: center;
+ 
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 14px;
+  
+}
+li a:hover {
+  background-color: white;
+}
+.active{
+	background-color: lightblue;
+}
+.no-gutters{
+	margin: 0px 10px;
+	padding: 0px 10px;
+}
+.container{
+	margin: 10px 10px;
+}
+.nav-tabs{
+	border-bottom: 0px;
+	opacity: 1;
+	position: sticky;
+	background-color: #017ce0;
+	
+}
+#logo{
+	float: left;
+	width: 100px;
+}
+img{
+	width:400px;
+}
+.carousel-indicators{
+	z-index: -50;
+}
+.carousel-control-prev{
+	left: 258px;
+}
+.carousel-control-next{
+	right: 258px;
+}
+.row{
+	display: block;
+}
+.jumbotron{
+	padding: 2rem 1rem;
+}
+
+.carousel{
+	display: flex;
+}
+#footer{
+	position: fixed;
+	bottom: 0;
+	background-color: lightblue;
+}
+#mySidenav a {
+  position: absolute;
+  right: -108px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 7px 7px 7px 7px;
+  box-sizing: content-box;
+
+}
+
+
+#mySidenav a:hover {
+  right: 0;
+}
+
+#fb {
+  top: 50px;
+  background-color:#1B4F72;
+}
+
+#insta {
+  top: 109px;
+  background-color: #21618C;
+}
+
+#blog {
+  top: 169px;
+  background-color:#2874A6;
+}
+
+#reddit {
+  top: 229px;
+  background-color: #2E86C1;
+}
+#email{
+	top: 289px;
+	background-color: #33adff;

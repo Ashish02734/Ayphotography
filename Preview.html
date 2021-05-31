@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A.Y_Photography</title>
+	<link rel="icon" href="icon.jpg">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="preview.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div  id="div1" class="jumbotron text-center">
+	<div id="img">
+		<img id="logo" src="new logo.jpg" class="rounded" alt="logo">
+	</div>
+	<h1>A.Y_Photography</h1>
+	<p>Preview</p>
+</div>
+	<div id="body" class="container-fluid">
+		<ul class="nav nav-tabs">
+			<li><a href="index.html">Homepage</a></li>
+			<li><a href="Photographs.html">Photographs</a></li>
+			<li class="active"><a href="#">Previews</a></li>
+			<li><a href="Contact Us.html">Contact Us</a></li>
+			<li><a href="About Us.html">About Us</a></li>
+		</ul>
+		
+		<div id="big" class="container-fluid">
+		<div class="container-fluid">
+			<div id="info">
+				<h3>Click the Images to View</h3>
+			</div>
+			<div class="row">
+				<div class="flex-container">
+				<div><img id="PeriWinkle" src="Compressed/Photo18.jpg" alt="PeriWinkle" style="width:100%;max-width:450px"></div>
+				<div><img id="SkyScene" src="Compressed/Photo2.jpg" alt="Sky Scene" style="width:100%;max-width:450px"></div>
+				<div><img id="Leaf" src="Compressed/Photo3.jpeg" alt="Leaf" style="width:100%;max-width:450px"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="flex-container">
+				<div><img id="SkyScene2" src="Compressed/Photo4.jpeg" alt="Sky Scene" style="width:100%;max-width:450px"></a></div>
+				<div><img id="SkyAboveTree" src="Compressed/Photo5.jpeg" alt="Sky Above Tree" style="width:100%;max-width:450px"></div>
+				<div><img id="Pipaltree" src="Compressed/Photo6.jpeg" alt="Pipal Tree" style="width:100%;max-width:450px"></div>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="flex-container">
+				<div><img id="Lily" src="Compressed/Photo7.jpeg" alt="Lily" style="width:100%;max-width:450px"></div>
+				<div><img id="Grass" src="Compressed/Photo8.jpeg" alt="Grass" style="width:100%;max-width:450px"></div>
+				<div><img id="Grass2" src="Compressed/Photo9.jpeg" alt="Grass" style="width:100%;max-width:450px"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="flex-container">
+				<div><img id="Sunsetbehindtree" src="Compressed/Photo10.jpeg" alt="Sunset Behind Tree" style="width:100%;max-width:450px"></div>
+				<div><img id="Narmadariverbank" src="Compressed/Photo11.jpeg" alt="Narmada River Bank" style="width:100%;max-width:450px"></div>
+				<div><img id="Mountaingarlandflower" src="Compressed/Photo12.jpg" alt="Mountain Garland Flower" style="width:100%;max-width:450px"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="flex-container">
+				<div><img id="Narmadabank" src="Compressed/Photo13.jpeg" alt="Narmada Bank" style="width:100%;max-width:450px"></div>
+				<div><img id="Neemtree" src="Compressed/Photo14.jpg" alt="Neem Tree" style="width:100%;max-width:450px"></div>
+				<div><img id="Roadsidetree" src="Compressed/Photo15.jpg" alt="RoadSide Tree" style="width:100%;max-width:450px"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="flex-container">
+				<div><img id="Pigeon" src="Compressed/Photo16.jpg" alt="Pigeon" style="width:100%;max-width:450px"></div>
+				<div><img id="Michaeldesanta" src="Compressed/Photo17.jpg" alt="Michael De Santa" style="width:100%;max-width:450px"></div>
+				<div><img id="ArtWork" src="Compressed/Photo1.jpeg" alt="ArtWork" style="width:100%;max-width:450px"></div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+		</div>
+			<script>
+				/*1*/
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("PeriWinkle");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*2*/	
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("SkyScene");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*3*/	
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("Leaf");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*4*/	
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("SkyScene2");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*5*/	
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("SkyAboveTree");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*6*/
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("Pipaltree");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*7*/
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("Lily");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*8*/
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("Grass");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*9*/
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("Grass2");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*10*/
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("Sunsetbehindtree");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*11*/
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("Narmadariverbank");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*12*/
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("Mountaingarlandflower");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}	
+				/*13*/
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("Narmadabank");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*14*/
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("Neemtree");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*15*/
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("Roadsidetree");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*16*/
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("Pigeon");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*17*/
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("Michaeldesanta");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+				/*18*/
+				var modal = document.getElementById("myModal");
+				var img = document.getElementById("ArtWork");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+				var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+			</script>
+		</div>
+	</div>
+<div id="footer" class="container-fluid">
+<footer class="page-footer font-small blue">
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#">A.Y_Photography</a>
+  </div>
+</footer>
+</div>	
+</body>
+</html>

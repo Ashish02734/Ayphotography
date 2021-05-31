@@ -1,0 +1,60 @@
+#div1{
+	background-color:  #33adff;
+}
+body{
+	background-color:  #b3e0ff;
+	background-image: url("background.jpeg");
+	background-size: cover;
+	font-family: Arial;
+}
+#logo{
+	float: left;
+	width: 100px;
+}
+ul {
+  background-color: #017ce0;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: center;
+ 
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 14px;
+  
+}
+li a:hover {
+  background-color: white;
+}
+.active{
+	background-color: lightblue;
+}
+#rest{
+	text-align: center;
+	background-color: lightblue;
+	border-bottom: 2px solid #b3e0ff;
+}
+.nav-tabs{
+	border-bottom: 0px;
+	border-top-left-radius:5px;
+	border-top-right-radius: 5px;
+}
+.jumbotron{
+	padding: 2rem 1rem;
+}
+#footer{
+	position: fixed;
+	bottom: 0;
+	background-color: lightblue;
+}
+#list{
+	list-style: none; 
+	background-color: lightblue;
+}
+
